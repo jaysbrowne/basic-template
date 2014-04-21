@@ -19,9 +19,10 @@
 			}
 
 			h1 {
-				margin: 0;
-				font-size: 1.5em;
+				font-size: 2em;
 				font-weight: normal;
+				margin-top: 1em;
+				margin-bottom: 0.5em;
 			}
 
 			img {
@@ -35,7 +36,8 @@
 			}
 
 			.page {
-				width: 320px;
+				width: 100%;
+				max-width: 720px;
 				margin: auto;
 				padding: 1em;
 			}
@@ -45,10 +47,10 @@
 			}
 
 			.caption span {
-				font-size: 0.8em;
 				margin-right: 1em;
 				padding-top: 0.15em;
-				display: block;
+				display: inline;
+				font-size: 1em;
 			}
 
 			.caption span.title {
@@ -58,8 +60,8 @@
 			.body {
 				font-size: 1.25em;
 				line-height: 140%;
-				margin-top: 1em;
-				margin-bottom: 1em;
+				margin-top: 1.5em;
+				margin-bottom: 1.5em;
 			}
 
 			.link {
@@ -67,9 +69,6 @@
 				margin: auto;
 				background-color: #224CA8;
 				color: #FFF;
-				padding: 0.5em;
-				padding-left: 1em;
-				padding-right: 1em;
 				font-size: 1.25em;
 				line-height: 140%;
 				text-decoration: none;
@@ -79,13 +78,16 @@
 			.link a {
 				color: #FFF;
 				text-decoration: none;
+				display: block;
+				margin: 0.5em;
+				margin-left: 1em;
+				margin-right: 1em;
 			}
 
 			.footer {
 				margin-top: 1em;
 				padding-top: 1em;
 				padding-bottom: 0.5em;
-				/*border-top: 1px solid #CCC;*/
 			}
 
 			.footer .links {
@@ -93,27 +95,25 @@
 				margin: auto;
 			}
 
-			@media all and (min-width: 768px) {
+			@media screen and (max-device-width: 500px), screen and (max-width: 500px) {
 
 				h1 {
-					font-size: 2em;
-					margin-top: 1em;
-					margin-bottom: 0.5em;
+					margin: 0 !important;
+					font-size: 1.5em !important;
 				}
 
 				.page {
-					max-width: 720px;
-					width: 100%;
-				}	
+					width: 320px !important;
+				}
 
 				.body {
-					margin-top: 1.5em;
-					margin-bottom: 1.5em;
+					margin-top: 1em !important;
+					margin-bottom: 1em !important;
 				}
 
 				.caption span {
-					display: inline;
-					font-size: 1em;
+					font-size: 0.8em !important;
+					display: block !important;
 				}
 			}
 
@@ -123,7 +123,7 @@
 		<div class="page">
 			<h1><singleline label="title">Main Title</singleline></h1>
 			<div>
-				<img editable="true" label="image" src="http://www.sethtane.com/paintings/slideshows/Lost-Stop.jpg" width="1024">
+				<img editable="true" label="image" src="http://www.sethtane.com/paintings/slideshows/Lost-Stop.jpg" width="1024" style="height:auto;">
 				<div class="caption">
 					<span class="title"><singleline label="image title">Whitehall Bound Staten Island Ferry</singleline></span>
 					<span><singleline label="image date">2014</singleline></span>
